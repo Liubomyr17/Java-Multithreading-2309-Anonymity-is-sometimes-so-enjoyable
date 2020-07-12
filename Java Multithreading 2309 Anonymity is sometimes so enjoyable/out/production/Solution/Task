@@ -1,0 +1,29 @@
+2309 Anonymity is sometimes so enjoyable
+1. In the vo package, create the public classes User, Location, Server, Subject, Subscription that inherit from NamedItem
+2. In the Solution class, for each class, create your own method that returns a list of class instances.
+For example, for the User class, this would be - public List <User> getUsers ()
+For the Location class, this will be - public List <Location> getLocations ()
+3. Inside each such method, create an anonymous class from AbstractDbSelectExecutor and call its desired method.
+Hint:
+the body of the method should start like this: return new AbstractDbSelectExecutor
+4. Example output for User and Location:
+Id = 5, name = 'User-5', description = Got by executing 'SELECT * FROM USER'
+Id = 1, name = 'Location-1', description = Got by executing 'SELECT * FROM LOCATION'
+5. Analyze the sample output and generate the correct query for all classes.
+
+Requirements:
+1. In the vo package, a public User class should be created that inherits from the NamedItem class.
+2. In the vo package, the public Location class should be created, inherited from the NamedItem class.
+3. In the vo package, the public Server class should be created, inherited from the NamedItem class.
+4. In the vo package, a public Subject class must be created that inherits from the NamedItem class.
+5. In the vo package, a public Subscription class must be created that inherits from the NamedItem class.
+6. An object of class AbstractDbSelectExecutor with a parameter of type User must be created in the getUsers method.
+7. An object of class AbstractDbSelectExecutor with a parameter of type Location must be created in the getUsers method.
+8. An object of class AbstractDbSelectExecutor with a parameter of type Server must be created in the getUsers method.
+9. An object of class AbstractDbSelectExecutor with a parameter of type Subject must be created in the getUsers method.
+10. An object of class AbstractDbSelectExecutor with a parameter of type Subscription must be created in the getUsers method.
+11. The getUsers method should return a valid list (in accordance with the condition of the task).
+12. The getLocations method should return a valid list (in accordance with the condition of the task).
+13. The getServers method should return a valid list (in accordance with the condition of the task).
+14. The getSubjects method should return a valid list (in accordance with the condition of the task).
+15. The getSubscriptions method should return a valid list (according to the condition of the task).
